@@ -19,8 +19,8 @@ o_fit.create_table()
 
 o_fit.insert_into_mysql()
 
-# o_fit.insert_df_to_mongodb()
+o_fit.insert_df_to_mongodb()
 
-# o_fit.answers_using_pandas()
+o_fit.answers_using_pandas()
 
 o_fit.answers_using_mysql()

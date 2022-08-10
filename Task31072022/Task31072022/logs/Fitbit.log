@@ -1,0 +1,127 @@
+2022-08-11 00:18:52,997 - INFO - ----------------------------
+2022-08-11 00:18:52,997 - INFO - Reading the file
+2022-08-11 00:18:53,001 - INFO - Datatype of ActivityDate columns before conversion: object
+2022-08-11 00:18:53,007 - INFO - Datatype of ActivityDate columns after conversion: datetime64[ns]
+2022-08-11 00:18:53,007 - INFO - Getting SQL DB connection
+2022-08-11 00:18:53,023 - INFO - Creating DB for the first time
+2022-08-11 00:18:53,024 - INFO - SQL DB connection acquired
+2022-08-11 00:18:53,027 - INFO - Getting SQL DB connection
+2022-08-11 00:18:53,031 - INFO - SQL DB connection acquired
+2022-08-11 00:18:53,034 - INFO - Getting Mongo DB connection
+2022-08-11 00:18:57,185 - INFO - Mongo DB connection acquired
+2022-08-11 00:18:57,909 - INFO - Inserted 457 records to MongoDB
+2022-08-11 00:18:57,911 - INFO - 4 . Find out in this data that how many unique id's we have?
+2022-08-11 00:18:57,915 - INFO - Total unique IDs in data : 35
+2022-08-11 00:18:57,915 - INFO - 5 . which id is one of the active id that you have in whole dataset?
+2022-08-11 00:18:57,927 - INFO - Most active ID : 8053475328
+2022-08-11 00:18:57,928 - INFO - 6 . how many of them have not logged there activity find out in terms of number of ids
+2022-08-11 00:18:57,936 - INFO - IDs with No LoggedActivitiesDistance 
+2022-08-11 00:18:57,936 - INFO -             Id  LoggedActivitiesDistance
+0   1503960366                       0.0
+32  8583815059                       0.0
+30  8253242879                       0.0
+29  8053475328                       0.0
+28  7086361926                       0.0
+25  6775888955                       0.0
+23  6290855005                       0.0
+22  6117666160                       0.0
+21  5577150313                       0.0
+20  5553957443                       0.0
+19  4702921684                       0.0
+18  4558609924                       0.0
+33  8792009665                       0.0
+16  4388161847                       0.0
+15  4319703577                       0.0
+17  4445114986                       0.0
+13  4020332650                       0.0
+1   1624580081                       0.0
+2   1644430081                       0.0
+3   1844505072                       0.0
+4   1927972279                       0.0
+6   2026352035                       0.0
+5   2022484408                       0.0
+8   2347167796                       0.0
+9   2873212765                       0.0
+11  3372868164                       0.0
+12  3977333714                       0.0
+7   2320127002                       0.0
+34  8877689391                       0.0
+2022-08-11 00:18:57,964 - INFO - 7 . Find out who is the laziest person id that we have in dataset
+2022-08-11 00:18:57,967 - INFO - Laziest ID based on most SedentaryMinutes : 4057192912
+2022-08-11 00:18:57,967 - INFO - 8 . Explore over an internet that how much calories burn is required for a healthyperson and find out how many healthy person we have in our dataset
+2022-08-11 00:18:57,970 - INFO - Healthy IDs who have lost more than 2200 calories per week: [1503960366 1624580081 1644430081 1844505072 1927972279 2022484408
+ 2026352035 2320127002 2347167796 2873212765 2891001357 3372868164
+ 3977333714 4020332650 4057192912 4319703577 4388161847 4445114986
+ 4558609924 4702921684 5553957443 5577150313 6117666160 6290855005
+ 6391747486 6775888955 6962181067 7007744171 7086361926 8053475328
+ 8253242879 8378563200 8583815059 8792009665 8877689391]
+2022-08-11 00:18:57,970 - INFO - 9. how many persons are not regular with respect to activity
+2022-08-11 00:18:57,973 - INFO - Top 5 irregular persons based on Variance in Calories lost : 25    6775888955
+10    2891001357
+34    8877689391
+2     1644430081
+22    6117666160
+Name: Id, dtype: int64
+2022-08-11 00:18:57,973 - INFO - 10 . who is the third most active person in this dataset find out those in pandas
+2022-08-11 00:18:57,975 - INFO - Third most active person based on VeryActiveMinutes : 8877689391
+2022-08-11 00:18:57,975 - INFO - 11 . who is the 5th laziest person available in dataset find it out
+2022-08-11 00:18:57,976 - INFO - 5th laziest person based on most SedentaryMinutes : 1503960366
+2022-08-11 00:18:57,976 - INFO - 12 . what is a total cumulative calories burn for a person find out
+2022-08-11 00:18:57,981 - INFO - Cumulative calories burned by each person :             Id  Calories
+13  4020332650     98412
+14  4057192912     60913
+19  4702921684     42322
+34  8877689391     41414
+31  8378563200     40274
+21  5577150313     36303
+0   1503960366     34128
+29  8053475328     31825
+17  4445114986     31617
+27  7007744171     31525
+8   2347167796     30320
+5   2022484408     29704
+26  6962181067     29249
+2   1644430081     29164
+4   1927972279     27048
+28  7086361926     26124
+1   1624580081     25705
+33  8792009665     24884
+25  6775888955     24523
+15  4319703577     23931
+18  4558609924     21962
+23  6290855005     21656
+20  5553957443     21630
+22  6117666160     20993
+9   2873212765     20349
+3   1844505072     19391
+32  8583815059     19130
+11  3372868164     18603
+7   2320127002     18385
+10  2891001357     18187
+30  8253242879     17556
+12  3977333714     16777
+6   2026352035     16266
+24  6391747486     15868
+16  4388161847     14442
+2022-08-11 00:18:57,981 - INFO - Getting SQL DB connection
+2022-08-11 00:18:57,988 - INFO - SQL DB connection acquired
+2022-08-11 00:18:57,988 - INFO - ************ Answers using MySQL************
+2022-08-11 00:18:57,988 - INFO - 4 . Find out in this data that how many unique id's we have?
+2022-08-11 00:18:57,992 - INFO - Total unique IDs in data : 35
+2022-08-11 00:18:57,992 - INFO - 5 . which id is one of the active id that you have in whole dataset?
+2022-08-11 00:18:57,993 - INFO - Most active ID : 8053475328
+2022-08-11 00:18:57,993 - INFO - 6 . how many of them have not logged there activity find out in terms of number of ids
+2022-08-11 00:18:57,994 - INFO - IDs with No LoggedActivitiesDistance 
+2022-08-11 00:18:57,994 - INFO - [(Decimal('1503960366'), Decimal('0E-15')), (Decimal('1624580081'), Decimal('0E-15')), (Decimal('1644430081'), Decimal('0E-15')), (Decimal('1844505072'), Decimal('0E-15')), (Decimal('1927972279'), Decimal('0E-15')), (Decimal('2022484408'), Decimal('0E-15')), (Decimal('2026352035'), Decimal('0E-15')), (Decimal('2320127002'), Decimal('0E-15')), (Decimal('2347167796'), Decimal('0E-15')), (Decimal('2873212765'), Decimal('0E-15')), (Decimal('3372868164'), Decimal('0E-15')), (Decimal('3977333714'), Decimal('0E-15')), (Decimal('4020332650'), Decimal('0E-15')), (Decimal('4319703577'), Decimal('0E-15')), (Decimal('4388161847'), Decimal('0E-15')), (Decimal('4445114986'), Decimal('0E-15')), (Decimal('4558609924'), Decimal('0E-15')), (Decimal('4702921684'), Decimal('0E-15')), (Decimal('5553957443'), Decimal('0E-15')), (Decimal('5577150313'), Decimal('0E-15')), (Decimal('6117666160'), Decimal('0E-15')), (Decimal('6290855005'), Decimal('0E-15')), (Decimal('6775888955'), Decimal('0E-15')), (Decimal('7086361926'), Decimal('0E-15')), (Decimal('8053475328'), Decimal('0E-15')), (Decimal('8253242879'), Decimal('0E-15')), (Decimal('8583815059'), Decimal('0E-15')), (Decimal('8792009665'), Decimal('0E-15')), (Decimal('8877689391'), Decimal('0E-15'))]
+2022-08-11 00:18:57,994 - INFO - 7 . Find out who is the laziest person id that we have in dataset
+2022-08-11 00:18:57,995 - INFO - Laziest ID based on most SedentaryMinutes : 4057192912
+2022-08-11 00:18:57,995 - INFO - 8 . Explore over an internet that how much calories burn is required for a healthyperson and find out how many healthy person we have in our dataset
+2022-08-11 00:18:57,996 - INFO - Healthy IDs who have lost more than 2200 calories per week: [(Decimal('1503960366'),), (Decimal('1624580081'),), (Decimal('1644430081'),), (Decimal('1844505072'),), (Decimal('1927972279'),), (Decimal('2022484408'),), (Decimal('2026352035'),), (Decimal('2320127002'),), (Decimal('2347167796'),), (Decimal('2873212765'),), (Decimal('2891001357'),), (Decimal('3372868164'),), (Decimal('3977333714'),), (Decimal('4020332650'),), (Decimal('4057192912'),), (Decimal('4319703577'),), (Decimal('4388161847'),), (Decimal('4445114986'),), (Decimal('4558609924'),), (Decimal('4702921684'),), (Decimal('5553957443'),), (Decimal('5577150313'),), (Decimal('6117666160'),), (Decimal('6290855005'),), (Decimal('6391747486'),), (Decimal('6775888955'),), (Decimal('6962181067'),), (Decimal('7007744171'),), (Decimal('7086361926'),), (Decimal('8053475328'),), (Decimal('8253242879'),), (Decimal('8378563200'),), (Decimal('8583815059'),), (Decimal('8792009665'),), (Decimal('8877689391'),)]
+2022-08-11 00:18:57,996 - INFO - 9. how many persons are not regular with respect to activity
+2022-08-11 00:18:57,997 - INFO - Top 5 irregular persons based on Variance in Calories lost : [(Decimal('6775888955'),), (Decimal('2891001357'),), (Decimal('8877689391'),), (Decimal('1644430081'),), (Decimal('6117666160'),)]
+2022-08-11 00:18:57,997 - INFO - 10 . who is the third most active person in this dataset find out those in mysql
+2022-08-11 00:18:57,998 - INFO - Third most active person based on VeryActiveMinutes : 8877689391
+2022-08-11 00:18:57,998 - INFO - 11 . who is the 5th laziest person available in dataset find it out
+2022-08-11 00:18:57,999 - INFO - 5th laziest person based on most SedentaryMinutes : 1503960366
+2022-08-11 00:18:57,999 - INFO - 12 . what is a total cumulative calories burn for a person find out
+2022-08-11 00:18:58,000 - INFO - Cumulative calories burned by each person : [(Decimal('4020332650'), Decimal('98412'))]

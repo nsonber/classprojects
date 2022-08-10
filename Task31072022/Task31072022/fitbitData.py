@@ -308,11 +308,14 @@ class FitbitData:
 
     def answers_using_mysql(self):
         """
-        Function analyzes Fitbit data stored in MongoDb collection and provides answers to questions asked on 31-Jul-2022
+        Function analyzes Fitbit data stored in MongoDb collection and provides answers to
+        questions asked on 31-Jul-2022
         :param self:
         :return:
         """
         self.get_sqldb_conn(username='root', password="Mysql@Jul22", dbname='FitBit')
+
+        self.lg.info("************ Answers using MySQL************")
 
         self.lg.info("4 . Find out in this data that how many unique id's we have?")
 
@@ -321,11 +324,77 @@ class FitbitData:
         records = self.cursor.fetchall()
 
         self.lg.info(f"Total unique IDs in data : {records[0][0]}")
+
         self.lg.info("5 . which id is one of the active id that you have in whole dataset?")
 
-        statement = "SELECT ID FROM fitbit_data"
+        statement = "SELECT ID, SUM(VeryActiveMinutes) FROM fitbit_data group by id " \
+                    "order by SUM(VeryActiveMinutes) desc"
+        self.cursor.execute(statement)
+        records = self.cursor.fetchmany(1)
 
+        self.lg.info(f"Most active ID : {records[0][0]}")
 
-        self.lg.info(f"Most active ID : {mostactiveid.values[0]}")
+        self.lg.info("6 . how many of them have not logged there activity find out in terms of number of ids")
+
+        statement = "SELECT ID, SUM(LoggedActivitiesDistance) FROM fitbit_data group by Id " \
+                    "having SUM(LoggedActivitiesDistance) = 0"
+        self.cursor.execute(statement)
+        records = self.cursor.fetchall()
+
+        self.lg.info(f"IDs with No LoggedActivitiesDistance ")
+
+        self.lg.info(records)
+
+        self.lg.info("7 . Find out who is the laziest person id that we have in dataset")
+
+        statement = "SELECT ID, SUM(SedentaryMinutes) FROM fitbit_data group by id order by SUM(SedentaryMinutes) desc"
+        self.cursor.execute(statement)
+        records = self.cursor.fetchmany(1)
+
+        self.lg.info(f"Laziest ID based on most SedentaryMinutes : {records[0][0]}")
+
+        self.lg.info("8 . Explore over an internet that how much calories burn is required for a healthy" +
+                     "person and find out how many healthy person we have in our dataset")
+
+        statement = "SELECT ID  FROM fitbit_data group by Id " \
+                    "having SUM(Calories) >=2200"
+        self.cursor.execute(statement)
+        records = self.cursor.fetchall()
+
+        self.lg.info(f"Healthy IDs who have lost more than 2200 calories per week: {records}")
+
+        self.lg.info("9. how many persons are not regular with respect to activity")
+
+        statement = "SELECT ID FROM fitbit_data group by id having variance(Calories) order by variance(Calories) desc"
+        self.cursor.execute(statement)
+        records = self.cursor.fetchmany(5)
+        self.lg.info(f"Top 5 irregular persons based on Variance in Calories lost : {records}")
+
+        self.lg.info("10 . who is the third most active person in this dataset find out those in mysql")
+
+        statement = "SELECT ID, SUM(VeryActiveMinutes) SUM_ACTIVE_MIN FROM fitbit_data group by id " \
+                    "order by SUM(VeryActiveMinutes) desc Limit 1 offset 2"
+        self.cursor.execute(statement)
+        records = self.cursor.fetchmany(1)
+
+        self.lg.info(f"Third most active person based on VeryActiveMinutes : {records[0][0]}")
+
+        self.lg.info("11 . who is the 5th laziest person available in dataset find it out")
+
+        statement = "SELECT ID, SUM(SedentaryMinutes) SUM_SED_MIN FROM fitbit_data group by id " \
+                    "order by SUM(SedentaryMinutes) desc Limit 1 offset 4"
+        self.cursor.execute(statement)
+        records = self.cursor.fetchmany(1)
+
+        self.lg.info(f"5th laziest person based on most SedentaryMinutes : {records[0][0]}")
+
+        self.lg.info("12 . what is a total cumulative calories burn for a person find out")
+
+        statement = "SELECT ID, SUM(Calories) SUM_Calories FROM fitbit_data group by id " \
+                    "order by SUM(Calories) desc"
+        self.cursor.execute(statement)
+        records = self.cursor.fetchmany(1)
+
+        self.lg.info(f"Cumulative calories burned by each person : {records}")
 
         self.close_db()
