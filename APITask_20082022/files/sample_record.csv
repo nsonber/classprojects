@@ -1,0 +1,2 @@
+Id,ActivityDate,TotalSteps,TotalDistance,TrackerDistance,LoggedActivitiesDistance,VeryActiveDistance,ModeratelyActiveDistance,LightActiveDistance,SedentaryActiveDistance,VeryActiveMinutes,FairlyActiveMinutes,LightlyActiveMinutes,SedentaryMinutes,Calories
+12345,20-08-2022,12262,7.869999886,7.869999886,0,3.319999933,0.829999983,3.640000105,0,47,21,200,866,1868

@@ -1,0 +1,897 @@
+2022-08-20 17:37:16,721 - INFO - ----------------------------
+2022-08-20 17:37:16,721 - ERROR - Exception on /mysqlinsert [POST]
+Traceback (most recent call last):
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "F:/Data Science/iNeuron/classprojects2/classprojects/APITask_20082022/TaskAPI.py", line 183, in insert_to_mysql
+    record = api1.get_record_mysql(id, date)
+TypeError: get_record_mysql() takes 1 positional argument but 3 were given
+2022-08-20 17:37:16,723 - INFO - 127.0.0.1 - - [20/Aug/2022 17:37:16] "[35m[1mPOST /mysqlinsert HTTP/1.1[0m" 500 -
+2022-08-20 17:40:14,897 - INFO - ----------------------------
+2022-08-20 17:40:15,286 - INFO - 127.0.0.1 - - [20/Aug/2022 17:40:15] "[31m[1mPOST /mysqlinsert HTTP/1.1[0m" 400 -
+2022-08-20 17:40:35,044 - INFO - ----------------------------
+2022-08-20 17:40:35,044 - INFO - ----------------------------
+2022-08-20 17:40:35,045 - INFO - Getting SQL DB connection
+2022-08-20 17:40:35,045 - INFO - Getting SQL DB connection
+2022-08-20 17:40:35,104 - INFO - Creating DB if not exist
+2022-08-20 17:40:35,104 - INFO - Creating DB if not exist
+2022-08-20 17:40:35,124 - INFO - SQL DB connection acquired
+2022-08-20 17:40:35,124 - INFO - SQL DB connection acquired
+2022-08-20 17:40:35,130 - INFO - 127.0.0.1 - - [20/Aug/2022 17:40:35] "POST /mysqlinsert HTTP/1.1" 200 -
+2022-08-20 17:40:35,130 - INFO - 127.0.0.1 - - [20/Aug/2022 17:40:35] "POST /mysqlinsert HTTP/1.1" 200 -
+2022-08-20 17:41:44,683 - INFO - ----------------------------
+2022-08-20 17:41:44,683 - INFO - Getting SQL DB connection
+2022-08-20 17:41:44,699 - INFO - Creating DB if not exist
+2022-08-20 17:41:44,701 - INFO - SQL DB connection acquired
+2022-08-20 17:41:44,702 - INFO - []
+2022-08-20 17:41:44,703 - INFO - 127.0.0.1 - - [20/Aug/2022 17:41:44] "POST /mysqlinsert HTTP/1.1" 200 -
+2022-08-20 17:43:02,366 - INFO - ----------------------------
+2022-08-20 17:43:02,367 - INFO - Getting SQL DB connection
+2022-08-20 17:43:02,382 - INFO - Creating DB if not exist
+2022-08-20 17:43:02,385 - INFO - SQL DB connection acquired
+2022-08-20 17:43:02,385 - INFO - Parameters are 1503960366 and 2016-04-01
+2022-08-20 17:43:02,387 - INFO - []
+2022-08-20 17:43:02,388 - INFO - 127.0.0.1 - - [20/Aug/2022 17:43:02] "POST /mysqlinsert HTTP/1.1" 200 -
+2022-08-20 17:44:27,465 - INFO - ----------------------------
+2022-08-20 17:44:27,466 - INFO - Getting SQL DB connection
+2022-08-20 17:44:27,481 - INFO - Creating DB if not exist
+2022-08-20 17:44:27,482 - INFO - SQL DB connection acquired
+2022-08-20 17:44:27,482 - INFO - Statement getting executed select ID, ACTIVITYDATE, TOTALSTEPS from fitbit_data where id = 1503960366 AND ActivityDate = 2016-04-01
+2022-08-20 17:44:27,484 - INFO - []
+2022-08-20 17:44:27,485 - INFO - 127.0.0.1 - - [20/Aug/2022 17:44:27] "POST /mysqlinsert HTTP/1.1" 200 -
+2022-08-20 17:45:48,340 - INFO - ----------------------------
+2022-08-20 17:45:48,340 - INFO - Getting SQL DB connection
+2022-08-20 17:45:48,355 - INFO - Creating DB if not exist
+2022-08-20 17:45:48,356 - INFO - SQL DB connection acquired
+2022-08-20 17:45:48,356 - INFO - Statement getting executed select ID, ACTIVITYDATE, TOTALSTEPS from fitbit_data where id = 1503960366 AND ActivityDate = '2016-04-01'
+2022-08-20 17:45:48,359 - INFO - [(Decimal('1503960366'), datetime.date(2016, 4, 1), Decimal('12262'))]
+2022-08-20 17:45:48,360 - INFO - 127.0.0.1 - - [20/Aug/2022 17:45:48] "POST /mysqlinsert HTTP/1.1" 200 -
+2022-08-20 18:05:14,612 - INFO - ----------------------------
+2022-08-20 18:05:14,613 - INFO - <Request 'http://127.0.0.1:5000/mysqlinsert' [POST]>
+2022-08-20 18:05:14,614 - ERROR - Exception on /mysqlinsert [POST]
+Traceback (most recent call last):
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2022-08-20 18:05:14,616 - INFO - 127.0.0.1 - - [20/Aug/2022 18:05:14] "[35m[1mPOST /mysqlinsert HTTP/1.1[0m" 500 -
+2022-08-20 18:07:07,660 - INFO - ----------------------------
+2022-08-20 18:07:07,661 - INFO - <Request 'http://127.0.0.1:5000/mysqlinsert' [POST]>
+2022-08-20 18:07:07,662 - INFO - 127.0.0.1 - - [20/Aug/2022 18:07:07] "POST /mysqlinsert HTTP/1.1" 200 -
+2022-08-20 18:08:13,985 - INFO - ----------------------------
+2022-08-20 18:08:13,986 - ERROR - Exception on /mysqlinsert [POST]
+Traceback (most recent call last):
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "F:/Data Science/iNeuron/classprojects2/classprojects/APITask_20082022/TaskAPI.py", line 196, in insert_to_mysql
+    api1.lg.info(request.json())
+TypeError: 'list' object is not callable
+2022-08-20 18:08:13,990 - INFO - 127.0.0.1 - - [20/Aug/2022 18:08:13] "[35m[1mPOST /mysqlinsert HTTP/1.1[0m" 500 -
+2022-08-20 18:09:48,173 - INFO - ----------------------------
+2022-08-20 18:09:48,173 - ERROR - Exception on /mysqlinsert [POST]
+Traceback (most recent call last):
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "F:/Data Science/iNeuron/classprojects2/classprojects/APITask_20082022/TaskAPI.py", line 196, in insert_to_mysql
+    api1.lg.info(request.text())
+AttributeError: 'Request' object has no attribute 'text'
+2022-08-20 18:09:48,178 - INFO - 127.0.0.1 - - [20/Aug/2022 18:09:48] "[35m[1mPOST /mysqlinsert HTTP/1.1[0m" 500 -
+2022-08-20 18:11:53,872 - INFO - ----------------------------
+2022-08-20 18:11:53,873 - ERROR - Exception on /mysqlinsert [POST]
+Traceback (most recent call last):
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "F:/Data Science/iNeuron/classprojects2/classprojects/APITask_20082022/TaskAPI.py", line 196, in insert_to_mysql
+    api1.lg.info(request.text)
+AttributeError: 'Request' object has no attribute 'text'
+2022-08-20 18:11:53,877 - INFO - 127.0.0.1 - - [20/Aug/2022 18:11:53] "[35m[1mPOST /mysqlinsert HTTP/1.1[0m" 500 -
+2022-08-20 18:14:54,149 - INFO - ----------------------------
+2022-08-20 18:14:54,150 - INFO - [{'Id': 12345, 'ActivityDate': '20-08-2022', 'TotalSteps': 12262, 'TotalDistance': 7.869999886, 'TrackerDistance': 7.869999886, 'LoggedActivitiesDistance': 0, 'VeryActiveDistance': 3.319999933, 'ModeratelyActiveDistance': 0.829999983, 'LightActiveDistance': 3.640000105, 'SedentaryActiveDistance': 0, 'VeryActiveMinutes': 47, 'FairlyActiveMinutes': 21, 'LightlyActiveMinutes': 200, 'SedentaryMinutes': 866, 'Calories': 1868}]
+2022-08-20 18:14:54,151 - INFO - 127.0.0.1 - - [20/Aug/2022 18:14:54] "POST /mysqlinsert HTTP/1.1" 200 -
+2022-08-20 18:16:23,553 - INFO - ----------------------------
+2022-08-20 18:16:23,553 - INFO - {'Id': 12345, 'ActivityDate': '20-08-2022', 'TotalSteps': 12262, 'TotalDistance': 7.869999886, 'TrackerDistance': 7.869999886, 'LoggedActivitiesDistance': 0, 'VeryActiveDistance': 3.319999933, 'ModeratelyActiveDistance': 0.829999983, 'LightActiveDistance': 3.640000105, 'SedentaryActiveDistance': 0, 'VeryActiveMinutes': 47, 'FairlyActiveMinutes': 21, 'LightlyActiveMinutes': 200, 'SedentaryMinutes': 866, 'Calories': 1868}
+2022-08-20 18:16:23,554 - INFO - 127.0.0.1 - - [20/Aug/2022 18:16:23] "POST /mysqlinsert HTTP/1.1" 200 -
+2022-08-20 18:20:19,839 - INFO - ----------------------------
+2022-08-20 18:20:19,839 - INFO - Getting SQL DB connection
+2022-08-20 18:20:19,940 - INFO - Creating DB if not exist
+2022-08-20 18:20:19,963 - INFO - SQL DB connection acquired
+2022-08-20 18:20:19,963 - ERROR - Error encountered while inserting data
+2022-08-20 18:20:19,963 - ERROR - 'dict' object has no attribute 'Id'
+2022-08-20 18:20:19,964 - INFO - 127.0.0.1 - - [20/Aug/2022 18:20:19] "POST /mysqlinsert HTTP/1.1" 200 -
+2022-08-20 18:21:26,199 - INFO - ----------------------------
+2022-08-20 18:21:26,199 - INFO - Getting SQL DB connection
+2022-08-20 18:21:26,214 - INFO - Creating DB if not exist
+2022-08-20 18:21:26,214 - INFO - SQL DB connection acquired
+2022-08-20 18:21:26,215 - ERROR - Exception on /mysqlinsert [POST]
+Traceback (most recent call last):
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "F:/Data Science/iNeuron/classprojects2/classprojects/APITask_20082022/TaskAPI.py", line 198, in insert_to_mysql
+    api1.insert_into_mysql(dict(request.json[0]))
+  File "F:/Data Science/iNeuron/classprojects2/classprojects/APITask_20082022/TaskAPI.py", line 110, in insert_into_mysql
+    print(d_rec.Id)
+AttributeError: 'dict' object has no attribute 'Id'
+2022-08-20 18:21:26,218 - INFO - 127.0.0.1 - - [20/Aug/2022 18:21:26] "[35m[1mPOST /mysqlinsert HTTP/1.1[0m" 500 -
+2022-08-20 18:23:46,830 - INFO - ----------------------------
+2022-08-20 18:23:46,832 - INFO - Getting SQL DB connection
+2022-08-20 18:23:46,865 - INFO - Creating DB if not exist
+2022-08-20 18:23:46,868 - INFO - SQL DB connection acquired
+2022-08-20 18:23:46,910 - ERROR - Error encountered while inserting data
+2022-08-20 18:23:46,911 - ERROR - 1292 (22007): Incorrect date value: '20-08-2022' for column 'ActivityDate' at row 1
+2022-08-20 18:23:46,912 - INFO - 127.0.0.1 - - [20/Aug/2022 18:23:46] "POST /mysqlinsert HTTP/1.1" 200 -
+2022-08-20 18:28:38,777 - INFO - ----------------------------
+2022-08-20 18:28:38,777 - INFO - Getting SQL DB connection
+2022-08-20 18:28:38,795 - INFO - Creating DB if not exist
+2022-08-20 18:28:38,799 - INFO - SQL DB connection acquired
+2022-08-20 18:28:38,800 - ERROR - Error encountered while inserting data
+2022-08-20 18:28:38,800 - ERROR - 1292 (22007): Incorrect date value: '08-20-2022' for column 'ActivityDate' at row 1
+2022-08-20 18:28:38,801 - INFO - 127.0.0.1 - - [20/Aug/2022 18:28:38] "POST /mysqlinsert HTTP/1.1" 200 -
+2022-08-20 18:31:05,480 - INFO - ----------------------------
+2022-08-20 18:31:05,480 - INFO - Getting SQL DB connection
+2022-08-20 18:31:05,497 - INFO - Creating DB if not exist
+2022-08-20 18:31:05,499 - INFO - SQL DB connection acquired
+2022-08-20 18:31:05,538 - INFO - Inserted records to FitBit_data
+2022-08-20 18:31:05,539 - INFO - 127.0.0.1 - - [20/Aug/2022 18:31:05] "POST /mysqlinsert HTTP/1.1" 200 -
+2022-08-20 18:35:01,179 - INFO - ----------------------------
+2022-08-20 18:35:01,179 - INFO - ----------------------------
+2022-08-20 18:35:01,179 - ERROR - Exception on /mongoinsert [POST]
+Traceback (most recent call last):
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "F:/Data Science/iNeuron/classprojects2/classprojects/APITask_20082022/TaskAPI.py", line 218, in insert_to_mongo
+TypeError: list indices must be integers or slices, not str
+2022-08-20 18:35:01,179 - ERROR - Exception on /mongoinsert [POST]
+Traceback (most recent call last):
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "F:/Data Science/iNeuron/classprojects2/classprojects/APITask_20082022/TaskAPI.py", line 218, in insert_to_mongo
+TypeError: list indices must be integers or slices, not str
+2022-08-20 18:35:01,184 - INFO - 127.0.0.1 - - [20/Aug/2022 18:35:01] "[35m[1mPOST /mongoinsert HTTP/1.1[0m" 500 -
+2022-08-20 18:35:01,184 - INFO - 127.0.0.1 - - [20/Aug/2022 18:35:01] "[35m[1mPOST /mongoinsert HTTP/1.1[0m" 500 -
+2022-08-20 18:35:19,746 - INFO - ----------------------------
+2022-08-20 18:35:19,746 - INFO - Getting Mongo DB connection
+2022-08-20 18:35:31,942 - INFO - Mongo DB connection acquired
+2022-08-20 18:35:32,407 - INFO - Inserted records to MongoDB
+2022-08-20 18:35:32,407 - INFO - 127.0.0.1 - - [20/Aug/2022 18:35:32] "POST /mongoinsert HTTP/1.1" 200 -
+2022-08-20 19:47:35,193 - INFO - ----------------------------
+2022-08-20 19:47:35,194 - INFO - Getting Mongo DB connection
+2022-08-20 19:47:47,434 - INFO - Mongo DB connection acquired
+2022-08-20 19:47:47,434 - INFO - Inserted records to MongoDB
+2022-08-20 19:49:17,601 - INFO - ----------------------------
+2022-08-20 19:49:17,951 - ERROR - Exception on /mongofetch [POST]
+Traceback (most recent call last):
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "F:/Data Science/iNeuron/classprojects2/classprojects/APITask_20082022/TaskAPI.py", line 222, in get_from_mongo
+    Id = request.json['id']
+KeyError: 'id'
+2022-08-20 19:49:17,965 - INFO - 127.0.0.1 - - [20/Aug/2022 19:49:17] "[35m[1mPOST /mongofetch HTTP/1.1[0m" 500 -
+2022-08-20 19:49:51,259 - INFO - ----------------------------
+2022-08-20 19:49:51,260 - INFO - Getting Mongo DB connection
+2022-08-20 19:50:03,503 - INFO - Mongo DB connection acquired
+2022-08-20 19:50:03,504 - INFO - Inserted records to MongoDB
+2022-08-20 19:50:03,504 - INFO - 127.0.0.1 - - [20/Aug/2022 19:50:03] "POST /mongofetch HTTP/1.1" 200 -
+2022-08-20 19:50:33,689 - INFO - ----------------------------
+2022-08-20 19:50:33,689 - INFO - Getting Mongo DB connection
+2022-08-20 19:50:45,864 - INFO - Mongo DB connection acquired
+2022-08-20 19:50:45,864 - INFO - Inserted records to MongoDB
+2022-08-20 19:52:11,042 - INFO - ----------------------------
+2022-08-20 19:52:11,042 - INFO - Getting Mongo DB connection
+2022-08-20 19:52:23,216 - INFO - Mongo DB connection acquired
+2022-08-20 19:52:23,216 - INFO - Fetched records from MongoDB
+2022-08-20 19:55:29,233 - INFO - ----------------------------
+2022-08-20 19:55:29,233 - INFO - Getting Mongo DB connection
+2022-08-20 19:55:41,408 - INFO - Mongo DB connection acquired
+2022-08-20 19:55:41,409 - INFO - Fetched records from MongoDB
+2022-08-20 19:56:00,026 - INFO - ----------------------------
+2022-08-20 19:56:00,027 - INFO - Getting Mongo DB connection
+2022-08-20 19:56:12,166 - INFO - Mongo DB connection acquired
+2022-08-20 19:56:12,166 - INFO - Fetched records from MongoDB
+2022-08-20 19:58:12,941 - INFO - ----------------------------
+2022-08-20 19:58:12,941 - INFO - Getting Mongo DB connection
+2022-08-20 19:58:25,115 - INFO - Mongo DB connection acquired
+2022-08-20 19:58:25,115 - INFO - Fetched records from MongoDB <pymongo.cursor.Cursor object at 0x000001FD9F9EED90>
+2022-08-20 20:00:32,918 - INFO - ----------------------------
+2022-08-20 20:00:32,918 - INFO - Getting Mongo DB connection
+2022-08-20 20:00:45,109 - INFO - Mongo DB connection acquired
+2022-08-20 20:00:45,369 - INFO - Fetched records from MongoDB
+2022-08-20 20:01:20,039 - INFO - ----------------------------
+2022-08-20 20:01:20,039 - INFO - Getting Mongo DB connection
+2022-08-20 20:01:32,148 - INFO - Mongo DB connection acquired
+2022-08-20 20:01:32,332 - INFO - Fetched records from MongoDB
+2022-08-20 20:02:09,960 - INFO - ----------------------------
+2022-08-20 20:02:09,960 - INFO - Getting Mongo DB connection
+2022-08-20 20:02:22,125 - INFO - Mongo DB connection acquired
+2022-08-20 20:02:22,387 - INFO - <class 'dict'>
+2022-08-20 20:02:22,387 - INFO - Fetched records from MongoDB
+2022-08-20 20:02:58,081 - INFO - ----------------------------
+2022-08-20 20:02:58,081 - INFO - Getting Mongo DB connection
+2022-08-20 20:03:10,210 - INFO - Mongo DB connection acquired
+2022-08-20 20:03:10,450 - INFO - {'_id': ObjectId('6300dc1be21b8a881f51eef7'), 'Id': 12345, 'ActivityDate': '08-20-2022', 'TotalSteps': 12262, 'TotalDistance': 7.869999886, 'TrackerDistance': 7.869999886, 'LoggedActivitiesDistance': 0, 'VeryActiveDistance': 3.319999933, 'ModeratelyActiveDistance': 0.829999983, 'LightActiveDistance': 3.640000105, 'SedentaryActiveDistance': 0, 'VeryActiveMinutes': 47, 'FairlyActiveMinutes': 21, 'LightlyActiveMinutes': 200, 'SedentaryMinutes': 866, 'Calories': 1868}
+2022-08-20 20:03:10,451 - INFO - Fetched records from MongoDB
+2022-08-20 20:03:49,908 - INFO - ----------------------------
+2022-08-20 20:03:49,908 - INFO - Getting Mongo DB connection
+2022-08-20 20:04:02,068 - INFO - Mongo DB connection acquired
+2022-08-20 20:04:02,288 - INFO - {'_id': ObjectId('62f3fd996f5be241bc58cc71'), 'Id': 1503960366, 'ActivityDate': datetime.datetime(2016, 3, 25, 0, 0), 'TotalSteps': 11004, 'TotalDistance': 7.1100001335144, 'TrackerDistance': 7.1100001335144, 'LoggedActivitiesDistance': 0.0, 'VeryActiveDistance': 2.5699999332428, 'ModeratelyActiveDistance': 0.46000000834465, 'LightActiveDistance': 4.07000017166138, 'SedentaryActiveDistance': 0.0, 'VeryActiveMinutes': 33, 'FairlyActiveMinutes': 12, 'LightlyActiveMinutes': 205, 'SedentaryMinutes': 804, 'Calories': 1819}
+2022-08-20 20:04:02,288 - INFO - {'_id': ObjectId('62f3fd996f5be241bc58cc72'), 'Id': 1503960366, 'ActivityDate': datetime.datetime(2016, 3, 26, 0, 0), 'TotalSteps': 17609, 'TotalDistance': 11.5500001907349, 'TrackerDistance': 11.5500001907349, 'LoggedActivitiesDistance': 0.0, 'VeryActiveDistance': 6.92000007629395, 'ModeratelyActiveDistance': 0.730000019073486, 'LightActiveDistance': 3.91000008583069, 'SedentaryActiveDistance': 0.0, 'VeryActiveMinutes': 89, 'FairlyActiveMinutes': 17, 'LightlyActiveMinutes': 274, 'SedentaryMinutes': 588, 'Calories': 2154}
+2022-08-20 20:04:02,288 - INFO - {'_id': ObjectId('62f3fd996f5be241bc58cc73'), 'Id': 1503960366, 'ActivityDate': datetime.datetime(2016, 3, 27, 0, 0), 'TotalSteps': 12736, 'TotalDistance': 8.52999973297119, 'TrackerDistance': 8.52999973297119, 'LoggedActivitiesDistance': 0.0, 'VeryActiveDistance': 4.65999984741211, 'ModeratelyActiveDistance': 0.159999996423721, 'LightActiveDistance': 3.71000003814697, 'SedentaryActiveDistance': 0.0, 'VeryActiveMinutes': 56, 'FairlyActiveMinutes': 5, 'LightlyActiveMinutes': 268, 'SedentaryMinutes': 605, 'Calories': 1944}
+2022-08-20 20:04:02,289 - INFO - {'_id': ObjectId('62f3fd996f5be241bc58cc74'), 'Id': 1503960366, 'ActivityDate': datetime.datetime(2016, 3, 28, 0, 0), 'TotalSteps': 13231, 'TotalDistance': 8.93000030517578, 'TrackerDistance': 8.93000030517578, 'LoggedActivitiesDistance': 0.0, 'VeryActiveDistance': 3.19000005722046, 'ModeratelyActiveDistance': 0.790000021457672, 'LightActiveDistance': 4.94999980926514, 'SedentaryActiveDistance': 0.0, 'VeryActiveMinutes': 39, 'FairlyActiveMinutes': 20, 'LightlyActiveMinutes': 224, 'SedentaryMinutes': 1080, 'Calories': 1932}
+2022-08-20 20:04:02,289 - INFO - {'_id': ObjectId('62f3fd996f5be241bc58cc75'), 'Id': 1503960366, 'ActivityDate': datetime.datetime(2016, 3, 29, 0, 0), 'TotalSteps': 12041, 'TotalDistance': 7.84999990463257, 'TrackerDistance': 7.84999990463257, 'LoggedActivitiesDistance': 0.0, 'VeryActiveDistance': 2.16000008583069, 'ModeratelyActiveDistance': 1.0900000333786, 'LightActiveDistance': 4.6100001335144, 'SedentaryActiveDistance': 0.0, 'VeryActiveMinutes': 28, 'FairlyActiveMinutes': 28, 'LightlyActiveMinutes': 243, 'SedentaryMinutes': 763, 'Calories': 1886}
+2022-08-20 20:04:02,289 - INFO - {'_id': ObjectId('62f3fd996f5be241bc58cc76'), 'Id': 1503960366, 'ActivityDate': datetime.datetime(2016, 3, 30, 0, 0), 'TotalSteps': 10970, 'TotalDistance': 7.15999984741211, 'TrackerDistance': 7.15999984741211, 'LoggedActivitiesDistance': 0.0, 'VeryActiveDistance': 2.35999989509583, 'ModeratelyActiveDistance': 0.509999990463257, 'LightActiveDistance': 4.28999996185303, 'SedentaryActiveDistance': 0.0, 'VeryActiveMinutes': 30, 'FairlyActiveMinutes': 13, 'LightlyActiveMinutes': 223, 'SedentaryMinutes': 1174, 'Calories': 1820}
+2022-08-20 20:04:02,289 - INFO - {'_id': ObjectId('62f3fd996f5be241bc58cc77'), 'Id': 1503960366, 'ActivityDate': datetime.datetime(2016, 3, 31, 0, 0), 'TotalSteps': 12256, 'TotalDistance': 7.8600001335144, 'TrackerDistance': 7.8600001335144, 'LoggedActivitiesDistance': 0.0, 'VeryActiveDistance': 2.28999996185303, 'ModeratelyActiveDistance': 0.490000009536743, 'LightActiveDistance': 5.03999996185303, 'SedentaryActiveDistance': 0.0, 'VeryActiveMinutes': 33, 'FairlyActiveMinutes': 12, 'LightlyActiveMinutes': 239, 'SedentaryMinutes': 820, 'Calories': 1889}
+2022-08-20 20:04:02,290 - INFO - {'_id': ObjectId('62f3fd996f5be241bc58cc78'), 'Id': 1503960366, 'ActivityDate': datetime.datetime(2016, 4, 1, 0, 0), 'TotalSteps': 12262, 'TotalDistance': 7.86999988555908, 'TrackerDistance': 7.86999988555908, 'LoggedActivitiesDistance': 0.0, 'VeryActiveDistance': 3.3199999332428, 'ModeratelyActiveDistance': 0.829999983310699, 'LightActiveDistance': 3.64000010490417, 'SedentaryActiveDistance': 0.0, 'VeryActiveMinutes': 47, 'FairlyActiveMinutes': 21, 'LightlyActiveMinutes': 200, 'SedentaryMinutes': 866, 'Calories': 1868}
+2022-08-20 20:04:02,297 - INFO - {'_id': ObjectId('62f3fd996f5be241bc58cc79'), 'Id': 1503960366, 'ActivityDate': datetime.datetime(2016, 4, 2, 0, 0), 'TotalSteps': 11248, 'TotalDistance': 7.25, 'TrackerDistance': 7.25, 'LoggedActivitiesDistance': 0.0, 'VeryActiveDistance': 3.0, 'ModeratelyActiveDistance': 0.449999988079071, 'LightActiveDistance': 3.74000000953674, 'SedentaryActiveDistance': 0.0, 'VeryActiveMinutes': 40, 'FairlyActiveMinutes': 11, 'LightlyActiveMinutes': 244, 'SedentaryMinutes': 636, 'Calories': 1843}
+2022-08-20 20:04:02,297 - INFO - {'_id': ObjectId('62f3fd996f5be241bc58cc7a'), 'Id': 1503960366, 'ActivityDate': datetime.datetime(2016, 4, 3, 0, 0), 'TotalSteps': 10016, 'TotalDistance': 6.36999988555908, 'TrackerDistance': 6.36999988555908, 'LoggedActivitiesDistance': 0.0, 'VeryActiveDistance': 0.910000026226044, 'ModeratelyActiveDistance': 1.27999997138977, 'LightActiveDistance': 4.17999982833862, 'SedentaryActiveDistance': 0.0, 'VeryActiveMinutes': 15, 'FairlyActiveMinutes': 30, 'LightlyActiveMinutes': 314, 'SedentaryMinutes': 655, 'Calories': 1850}
+2022-08-20 20:04:02,297 - INFO - {'_id': ObjectId('62f3fd996f5be241bc58cc7b'), 'Id': 1503960366, 'ActivityDate': datetime.datetime(2016, 4, 4, 0, 0), 'TotalSteps': 14557, 'TotalDistance': 9.80000019073486, 'TrackerDistance': 9.80000019073486, 'LoggedActivitiesDistance': 0.0, 'VeryActiveDistance': 3.39000010490417, 'ModeratelyActiveDistance': 0.699999988079071, 'LightActiveDistance': 5.69000005722046, 'SedentaryActiveDistance': 0.0, 'VeryActiveMinutes': 43, 'FairlyActiveMinutes': 18, 'LightlyActiveMinutes': 285, 'SedentaryMinutes': 757, 'Calories': 2030}
+2022-08-20 20:04:02,298 - INFO - {'_id': ObjectId('62f3fd996f5be241bc58cc7c'), 'Id': 1503960366, 'ActivityDate': datetime.datetime(2016, 4, 5, 0, 0), 'TotalSteps': 14844, 'TotalDistance': 9.72999954223633, 'TrackerDistance': 9.72999954223633, 'LoggedActivitiesDistance': 0.0, 'VeryActiveDistance': 2.94000005722046, 'ModeratelyActiveDistance': 0.759999990463257, 'LightActiveDistance': 6.03999996185303, 'SedentaryActiveDistance': 0.0, 'VeryActiveMinutes': 36, 'FairlyActiveMinutes': 18, 'LightlyActiveMinutes': 341, 'SedentaryMinutes': 736, 'Calories': 2083}
+2022-08-20 20:04:02,298 - INFO - {'_id': ObjectId('62f3fd996f5be241bc58cc7d'), 'Id': 1503960366, 'ActivityDate': datetime.datetime(2016, 4, 6, 0, 0), 'TotalSteps': 11974, 'TotalDistance': 7.67000007629395, 'TrackerDistance': 7.67000007629395, 'LoggedActivitiesDistance': 0.0, 'VeryActiveDistance': 2.03999996185303, 'ModeratelyActiveDistance': 0.479999989271164, 'LightActiveDistance': 5.15000009536743, 'SedentaryActiveDistance': 0.0, 'VeryActiveMinutes': 27, 'FairlyActiveMinutes': 12, 'LightlyActiveMinutes': 228, 'SedentaryMinutes': 1173, 'Calories': 1861}
+2022-08-20 20:04:02,298 - INFO - {'_id': ObjectId('62f3fd996f5be241bc58cc7e'), 'Id': 1503960366, 'ActivityDate': datetime.datetime(2016, 4, 7, 0, 0), 'TotalSteps': 10198, 'TotalDistance': 6.44000005722046, 'TrackerDistance': 6.44000005722046, 'LoggedActivitiesDistance': 0.0, 'VeryActiveDistance': 1.20000004768372, 'ModeratelyActiveDistance': 0.790000021457672, 'LightActiveDistance': 4.44999980926514, 'SedentaryActiveDistance': 0.0, 'VeryActiveMinutes': 17, 'FairlyActiveMinutes': 20, 'LightlyActiveMinutes': 195, 'SedentaryMinutes': 1208, 'Calories': 1755}
+2022-08-20 20:04:02,298 - INFO - {'_id': ObjectId('62f3fd996f5be241bc58cc7f'), 'Id': 1503960366, 'ActivityDate': datetime.datetime(2016, 4, 8, 0, 0), 'TotalSteps': 12521, 'TotalDistance': 7.94000005722046, 'TrackerDistance': 7.94000005722046, 'LoggedActivitiesDistance': 0.0, 'VeryActiveDistance': 3.30999994277954, 'ModeratelyActiveDistance': 0.899999976158142, 'LightActiveDistance': 3.74000000953674, 'SedentaryActiveDistance': 0.0, 'VeryActiveMinutes': 46, 'FairlyActiveMinutes': 22, 'LightlyActiveMinutes': 212, 'SedentaryMinutes': 1160, 'Calories': 1895}
+2022-08-20 20:04:02,298 - INFO - {'_id': ObjectId('62f3fd996f5be241bc58cc80'), 'Id': 1503960366, 'ActivityDate': datetime.datetime(2016, 4, 9, 0, 0), 'TotalSteps': 12432, 'TotalDistance': 8.10000038146973, 'TrackerDistance': 8.10000038146973, 'LoggedActivitiesDistance': 0.0, 'VeryActiveDistance': 2.58999991416931, 'ModeratelyActiveDistance': 0.589999973773956, 'LightActiveDistance': 4.92000007629395, 'SedentaryActiveDistance': 0.0, 'VeryActiveMinutes': 32, 'FairlyActiveMinutes': 15, 'LightlyActiveMinutes': 248, 'SedentaryMinutes': 738, 'Calories': 1883}
+2022-08-20 20:04:02,312 - INFO - {'_id': ObjectId('62f3fd996f5be241bc58cc81'), 'Id': 1503960366, 'ActivityDate': datetime.datetime(2016, 4, 10, 0, 0), 'TotalSteps': 10057, 'TotalDistance': 6.98000001907349, 'TrackerDistance': 6.98000001907349, 'LoggedActivitiesDistance': 0.0, 'VeryActiveDistance': 4.0, 'ModeratelyActiveDistance': 0.490000009536743, 'LightActiveDistance': 2.48000001907349, 'SedentaryActiveDistance': 0.0, 'VeryActiveMinutes': 44, 'FairlyActiveMinutes': 13, 'LightlyActiveMinutes': 168, 'SedentaryMinutes': 737, 'Calories': 1755}
+2022-08-20 20:04:02,312 - INFO - {'_id': ObjectId('62f3fd996f5be241bc58cc82'), 'Id': 1503960366, 'ActivityDate': datetime.datetime(2016, 4, 11, 0, 0), 'TotalSteps': 10990, 'TotalDistance': 7.26000022888184, 'TrackerDistance': 7.26000022888184, 'LoggedActivitiesDistance': 0.0, 'VeryActiveDistance': 2.03999996185303, 'ModeratelyActiveDistance': 0.569999992847443, 'LightActiveDistance': 4.65000009536743, 'SedentaryActiveDistance': 0.0, 'VeryActiveMinutes': 26, 'FairlyActiveMinutes': 14, 'LightlyActiveMinutes': 216, 'SedentaryMinutes': 855, 'Calories': 1811}
+2022-08-20 20:04:02,312 - INFO - {'_id': ObjectId('62f3fd996f5be241bc58cc83'), 'Id': 1503960366, 'ActivityDate': datetime.datetime(2016, 4, 12, 0, 0), 'TotalSteps': 224, 'TotalDistance': 0.140000000596046, 'TrackerDistance': 0.140000000596046, 'LoggedActivitiesDistance': 0.0, 'VeryActiveDistance': 0.0, 'ModeratelyActiveDistance': 0.0, 'LightActiveDistance': 0.129999995231628, 'SedentaryActiveDistance': 0.0, 'VeryActiveMinutes': 0, 'FairlyActiveMinutes': 0, 'LightlyActiveMinutes': 9, 'SedentaryMinutes': 32, 'Calories': 50}
+2022-08-20 20:04:02,313 - INFO - Fetched records from MongoDB
+2022-08-20 20:05:14,848 - INFO - ----------------------------
+2022-08-20 20:05:14,848 - INFO - Getting Mongo DB connection
+2022-08-20 20:05:26,990 - INFO - Mongo DB connection acquired
+2022-08-20 20:05:27,194 - INFO - Fetched records from MongoDB
+2022-08-20 20:05:46,728 - INFO - ----------------------------
+2022-08-20 20:05:46,728 - INFO - Getting Mongo DB connection
+2022-08-20 20:05:58,838 - INFO - Mongo DB connection acquired
+2022-08-20 20:05:58,838 - ERROR - Error encountered while fetching data to MongoDB
+2022-08-20 20:05:58,838 - ERROR - int() argument must be a string, a bytes-like object or a number, not 'builtin_function_or_method'
+Traceback (most recent call last):
+  File "F:/Data Science/iNeuron/classprojects2/classprojects/APITask_20082022/TaskAPI.py", line 181, in get_record_from_mongo
+    "Id": {"$eq": int(Id)}
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'builtin_function_or_method'
+2022-08-20 20:05:58,839 - INFO - 127.0.0.1 - - [20/Aug/2022 20:05:58] "POST /mongofetch HTTP/1.1" 200 -
+2022-08-20 20:06:46,962 - INFO - ----------------------------
+2022-08-20 20:06:46,962 - INFO - Getting Mongo DB connection
+2022-08-20 20:06:59,141 - INFO - Mongo DB connection acquired
+2022-08-20 20:06:59,141 - ERROR - Exception on /mongofetch [POST]
+Traceback (most recent call last):
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "F:/Data Science/iNeuron/classprojects2/classprojects/APITask_20082022/TaskAPI.py", line 231, in get_from_mongo
+    record = api1.get_record_from_mongo(id)
+  File "F:/Data Science/iNeuron/classprojects2/classprojects/APITask_20082022/TaskAPI.py", line 178, in get_record_from_mongo
+    Id = int(Id)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'builtin_function_or_method'
+2022-08-20 20:06:59,143 - INFO - 127.0.0.1 - - [20/Aug/2022 20:06:59] "[35m[1mPOST /mongofetch HTTP/1.1[0m" 500 -
+2022-08-20 20:08:02,183 - INFO - ----------------------------
+2022-08-20 20:08:02,183 - INFO - Getting Mongo DB connection
+2022-08-20 20:08:14,383 - INFO - Mongo DB connection acquired
+2022-08-20 20:08:14,383 - INFO - <built-in function id>
+2022-08-20 20:08:14,655 - ERROR - Error encountered while fetching data to MongoDB
+2022-08-20 20:08:14,655 - ERROR - cannot encode object: <built-in function id>, of type: <class 'builtin_function_or_method'>
+Traceback (most recent call last):
+  File "F:/Data Science/iNeuron/classprojects2/classprojects/APITask_20082022/TaskAPI.py", line 186, in get_record_from_mongo
+    for rec in records:
+  File "C:\Users\neera\anaconda3\lib\site-packages\pymongo\cursor.py", line 1238, in next
+    if len(self.__data) or self._refresh():
+  File "C:\Users\neera\anaconda3\lib\site-packages\pymongo\cursor.py", line 1155, in _refresh
+    self.__send_message(q)
+  File "C:\Users\neera\anaconda3\lib\site-packages\pymongo\cursor.py", line 1044, in __send_message
+    response = client._run_operation(
+  File "C:\Users\neera\anaconda3\lib\site-packages\pymongo\mongo_client.py", line 1424, in _run_operation
+    return self._retryable_read(
+  File "C:\Users\neera\anaconda3\lib\site-packages\pymongo\mongo_client.py", line 1525, in _retryable_read
+    return func(session, server, sock_info, secondary_ok)
+  File "C:\Users\neera\anaconda3\lib\site-packages\pymongo\mongo_client.py", line 1420, in _cmd
+    return server.run_operation(
+  File "C:\Users\neera\anaconda3\lib\site-packages\pymongo\server.py", line 98, in run_operation
+    message = operation.get_message(
+  File "C:\Users\neera\anaconda3\lib\site-packages\pymongo\message.py", line 350, in get_message
+    request_id, msg, size, _ = _op_msg(
+  File "C:\Users\neera\anaconda3\lib\site-packages\pymongo\message.py", line 742, in _op_msg
+    return _op_msg_uncompressed(
+bson.errors.InvalidDocument: cannot encode object: <built-in function id>, of type: <class 'builtin_function_or_method'>
+2022-08-20 20:08:14,694 - INFO - 127.0.0.1 - - [20/Aug/2022 20:08:14] "POST /mongofetch HTTP/1.1" 200 -
+2022-08-20 20:09:14,098 - INFO - ----------------------------
+2022-08-20 20:09:14,098 - INFO - Getting Mongo DB connection
+2022-08-20 20:09:26,277 - INFO - Mongo DB connection acquired
+2022-08-20 20:09:26,277 - INFO - 12345
+2022-08-20 20:09:26,510 - INFO - Fetched records from MongoDB
+2022-08-20 20:09:26,511 - INFO - 127.0.0.1 - - [20/Aug/2022 20:09:26] "POST /mongofetch HTTP/1.1" 200 -
+2022-08-20 20:10:09,720 - INFO - ----------------------------
+2022-08-20 20:10:09,720 - INFO - ----------------------------
+2022-08-20 20:10:09,720 - INFO - Getting Mongo DB connection
+2022-08-20 20:10:09,720 - INFO - Getting Mongo DB connection
+2022-08-20 20:10:21,846 - INFO - Mongo DB connection acquired
+2022-08-20 20:10:21,846 - INFO - Mongo DB connection acquired
+2022-08-20 20:10:21,846 - INFO - 1503960366
+2022-08-20 20:10:21,846 - INFO - 1503960366
+2022-08-20 20:10:22,023 - INFO - Fetched records from MongoDB
+2022-08-20 20:10:22,023 - INFO - Fetched records from MongoDB
+2022-08-20 20:10:22,025 - INFO - 127.0.0.1 - - [20/Aug/2022 20:10:22] "POST /mongofetch HTTP/1.1" 200 -
+2022-08-20 20:10:22,025 - INFO - 127.0.0.1 - - [20/Aug/2022 20:10:22] "POST /mongofetch HTTP/1.1" 200 -
+2022-08-20 20:10:36,769 - INFO - ----------------------------
+2022-08-20 20:10:36,769 - INFO - ----------------------------
+2022-08-20 20:10:36,769 - INFO - ----------------------------
+2022-08-20 20:10:36,769 - INFO - Getting Mongo DB connection
+2022-08-20 20:10:36,769 - INFO - Getting Mongo DB connection
+2022-08-20 20:10:36,769 - INFO - Getting Mongo DB connection
+2022-08-20 20:10:48,900 - INFO - Mongo DB connection acquired
+2022-08-20 20:10:48,900 - INFO - Mongo DB connection acquired
+2022-08-20 20:10:48,900 - INFO - Mongo DB connection acquired
+2022-08-20 20:10:48,900 - INFO - 1503960366
+2022-08-20 20:10:48,900 - INFO - 1503960366
+2022-08-20 20:10:48,900 - INFO - 1503960366
+2022-08-20 20:10:49,091 - INFO - Fetched records from MongoDB
+2022-08-20 20:10:49,091 - INFO - Fetched records from MongoDB
+2022-08-20 20:10:49,091 - INFO - Fetched records from MongoDB
+2022-08-20 20:10:49,093 - INFO - 127.0.0.1 - - [20/Aug/2022 20:10:49] "POST /mongofetch HTTP/1.1" 200 -
+2022-08-20 20:10:49,093 - INFO - 127.0.0.1 - - [20/Aug/2022 20:10:49] "POST /mongofetch HTTP/1.1" 200 -
+2022-08-20 20:10:49,093 - INFO - 127.0.0.1 - - [20/Aug/2022 20:10:49] "POST /mongofetch HTTP/1.1" 200 -
+2022-08-20 20:11:36,239 - INFO - ----------------------------
+2022-08-20 20:11:36,240 - INFO - Getting Mongo DB connection
+2022-08-20 20:11:48,387 - INFO - Mongo DB connection acquired
+2022-08-20 20:11:48,672 - INFO - Fetched records from MongoDB
+2022-08-20 20:11:48,673 - INFO - 127.0.0.1 - - [20/Aug/2022 20:11:48] "POST /mongofetch HTTP/1.1" 200 -
+2022-08-20 20:40:49,516 - INFO - ----------------------------
+2022-08-20 20:40:49,517 - INFO - Getting SQL DB connection
+2022-08-20 20:40:49,805 - INFO - Creating DB if not exist
+2022-08-20 20:40:49,869 - INFO - SQL DB connection acquired
+2022-08-20 20:42:34,129 - INFO - ----------------------------
+2022-08-20 20:43:00,031 - INFO - ----------------------------
+2022-08-20 20:43:00,031 - INFO - Getting SQL DB connection
+2022-08-20 20:43:00,050 - INFO - Creating DB if not exist
+2022-08-20 20:43:00,051 - INFO - SQL DB connection acquired
+2022-08-20 20:43:26,680 - INFO - ----------------------------
+2022-08-20 20:43:26,680 - INFO - Getting SQL DB connection
+2022-08-20 20:43:26,696 - INFO - Creating DB if not exist
+2022-08-20 20:43:26,697 - INFO - SQL DB connection acquired
+2022-08-20 20:43:36,964 - INFO - ----------------------------
+2022-08-20 20:43:36,965 - INFO - Getting SQL DB connection
+2022-08-20 20:43:36,979 - INFO - Creating DB if not exist
+2022-08-20 20:43:36,980 - INFO - SQL DB connection acquired
+2022-08-20 20:44:35,754 - INFO - ----------------------------
+2022-08-20 20:44:46,032 - INFO - ----------------------------
+2022-08-20 20:45:28,031 - INFO - ----------------------------
+2022-08-20 20:45:28,031 - INFO - Getting SQL DB connection
+2022-08-20 20:45:28,051 - INFO - Creating DB if not exist
+2022-08-20 20:45:28,052 - INFO - SQL DB connection acquired
+2022-08-20 20:46:01,166 - INFO - ----------------------------
+2022-08-20 20:46:01,166 - INFO - Getting SQL DB connection
+2022-08-20 20:46:01,186 - INFO - Creating DB if not exist
+2022-08-20 20:46:01,187 - INFO - SQL DB connection acquired
+2022-08-20 20:51:29,328 - INFO - ----------------------------
+2022-08-20 20:51:29,329 - INFO - Getting SQL DB connection
+2022-08-20 20:51:29,377 - INFO - Creating DB if not exist
+2022-08-20 20:51:29,379 - INFO - SQL DB connection acquired
+2022-08-20 20:56:58,552 - INFO - ----------------------------
+2022-08-20 20:56:58,553 - INFO - 127.0.0.1 - - [20/Aug/2022 20:56:58] "[31m[1mPOST /mysqlupdate HTTP/1.1[0m" 400 -
+2022-08-20 20:57:11,648 - INFO - ----------------------------
+2022-08-20 20:57:11,648 - INFO - ----------------------------
+2022-08-20 20:57:11,648 - ERROR - Exception on /mysqlupdate [POST]
+Traceback (most recent call last):
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "F:/Data Science/iNeuron/classprojects2/classprojects/APITask_20082022/TaskAPI.py", line 37, in update_to_mysql
+    if api1.update_into_mysql(dict(request.json[0])):
+KeyError: 0
+2022-08-20 20:57:11,648 - ERROR - Exception on /mysqlupdate [POST]
+Traceback (most recent call last):
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "F:/Data Science/iNeuron/classprojects2/classprojects/APITask_20082022/TaskAPI.py", line 37, in update_to_mysql
+    if api1.update_into_mysql(dict(request.json[0])):
+KeyError: 0
+2022-08-20 20:57:11,651 - INFO - 127.0.0.1 - - [20/Aug/2022 20:57:11] "[35m[1mPOST /mysqlupdate HTTP/1.1[0m" 500 -
+2022-08-20 20:57:11,651 - INFO - 127.0.0.1 - - [20/Aug/2022 20:57:11] "[35m[1mPOST /mysqlupdate HTTP/1.1[0m" 500 -
+2022-08-20 20:58:36,410 - INFO - ----------------------------
+2022-08-20 20:58:36,410 - INFO - ----------------------------
+2022-08-20 20:58:36,410 - INFO - ----------------------------
+2022-08-20 20:58:36,410 - ERROR - Exception on /mysqlupdate [POST]
+Traceback (most recent call last):
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "F:/Data Science/iNeuron/classprojects2/classprojects/APITask_20082022/TaskAPI.py", line 37, in update_to_mysql
+    if api1.update_into_mysql(dict(request.json[0])):
+KeyError: 0
+2022-08-20 20:58:36,410 - ERROR - Exception on /mysqlupdate [POST]
+Traceback (most recent call last):
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "F:/Data Science/iNeuron/classprojects2/classprojects/APITask_20082022/TaskAPI.py", line 37, in update_to_mysql
+    if api1.update_into_mysql(dict(request.json[0])):
+KeyError: 0
+2022-08-20 20:58:36,410 - ERROR - Exception on /mysqlupdate [POST]
+Traceback (most recent call last):
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "F:/Data Science/iNeuron/classprojects2/classprojects/APITask_20082022/TaskAPI.py", line 37, in update_to_mysql
+    if api1.update_into_mysql(dict(request.json[0])):
+KeyError: 0
+2022-08-20 20:58:36,411 - INFO - 127.0.0.1 - - [20/Aug/2022 20:58:36] "[35m[1mPOST /mysqlupdate HTTP/1.1[0m" 500 -
+2022-08-20 20:58:36,411 - INFO - 127.0.0.1 - - [20/Aug/2022 20:58:36] "[35m[1mPOST /mysqlupdate HTTP/1.1[0m" 500 -
+2022-08-20 20:58:36,411 - INFO - 127.0.0.1 - - [20/Aug/2022 20:58:36] "[35m[1mPOST /mysqlupdate HTTP/1.1[0m" 500 -
+2022-08-20 20:59:14,523 - INFO - ----------------------------
+2022-08-20 20:59:14,524 - ERROR - Exception on /mysqlupdate [POST]
+Traceback (most recent call last):
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "F:/Data Science/iNeuron/classprojects2/classprojects/APITask_20082022/TaskAPI.py", line 36, in update_to_mysql
+    api1.lg.info(request.json[0])
+KeyError: 0
+2022-08-20 20:59:14,526 - INFO - 127.0.0.1 - - [20/Aug/2022 20:59:14] "[35m[1mPOST /mysqlupdate HTTP/1.1[0m" 500 -
+2022-08-20 21:00:19,188 - INFO - ----------------------------
+2022-08-20 21:00:19,188 - INFO - ----------------------------
+2022-08-20 21:00:19,190 - INFO - {'Id': 12345, 'ActivityDate': '20-08-2022', 'TotalSteps': 13456, 'TotalDistance': 7.869999886, 'TrackerDistance': 7.869999886, 'LoggedActivitiesDistance': 0, 'VeryActiveDistance': 3.319999933, 'ModeratelyActiveDistance': 0.829999983, 'LightActiveDistance': 3.640000105, 'SedentaryActiveDistance': 0, 'VeryActiveMinutes': 47, 'FairlyActiveMinutes': 21, 'LightlyActiveMinutes': 200, 'SedentaryMinutes': 866, 'Calories': 1868}
+2022-08-20 21:00:19,190 - INFO - {'Id': 12345, 'ActivityDate': '20-08-2022', 'TotalSteps': 13456, 'TotalDistance': 7.869999886, 'TrackerDistance': 7.869999886, 'LoggedActivitiesDistance': 0, 'VeryActiveDistance': 3.319999933, 'ModeratelyActiveDistance': 0.829999983, 'LightActiveDistance': 3.640000105, 'SedentaryActiveDistance': 0, 'VeryActiveMinutes': 47, 'FairlyActiveMinutes': 21, 'LightlyActiveMinutes': 200, 'SedentaryMinutes': 866, 'Calories': 1868}
+2022-08-20 21:00:19,190 - INFO - Getting SQL DB connection
+2022-08-20 21:00:19,190 - INFO - Getting SQL DB connection
+2022-08-20 21:00:19,212 - INFO - Creating DB if not exist
+2022-08-20 21:00:19,212 - INFO - Creating DB if not exist
+2022-08-20 21:00:19,213 - INFO - SQL DB connection acquired
+2022-08-20 21:00:19,213 - INFO - SQL DB connection acquired
+2022-08-20 21:00:19,215 - ERROR - Error encountered while updating data using statement UPDATE fitbit_data SET   TotalSteps = 13456, TotalDistance = 7.869999886, TrackerDistance = 7.869999886, LoggedActivitiesDistance = 0, VeryActiveDistance = 3.319999933, ModeratelyActiveDistance = 0.829999983, LightActiveDistance = 3.640000105, SedentaryActiveDistance = 0, VeryActiveMinutes = 47, FairlyActiveMinutes = 21, LightlyActiveMinutes = 200, SedentaryMinutes = 866, Calories = 1868 WHERE  Id = 12345 AND ActivityDate = 2022-08-20 00:00:00
+2022-08-20 21:00:19,215 - ERROR - Error encountered while updating data using statement UPDATE fitbit_data SET   TotalSteps = 13456, TotalDistance = 7.869999886, TrackerDistance = 7.869999886, LoggedActivitiesDistance = 0, VeryActiveDistance = 3.319999933, ModeratelyActiveDistance = 0.829999983, LightActiveDistance = 3.640000105, SedentaryActiveDistance = 0, VeryActiveMinutes = 47, FairlyActiveMinutes = 21, LightlyActiveMinutes = 200, SedentaryMinutes = 866, Calories = 1868 WHERE  Id = 12345 AND ActivityDate = 2022-08-20 00:00:00
+2022-08-20 21:00:19,215 - ERROR - 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00' at line 1
+2022-08-20 21:00:19,215 - ERROR - 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00' at line 1
+2022-08-20 21:00:19,216 - INFO - 127.0.0.1 - - [20/Aug/2022 21:00:19] "POST /mysqlupdate HTTP/1.1" 200 -
+2022-08-20 21:00:19,216 - INFO - 127.0.0.1 - - [20/Aug/2022 21:00:19] "POST /mysqlupdate HTTP/1.1" 200 -
+2022-08-20 21:02:29,074 - INFO - ----------------------------
+2022-08-20 21:02:29,074 - INFO - ----------------------------
+2022-08-20 21:02:29,074 - INFO - ----------------------------
+2022-08-20 21:02:29,075 - INFO - {'Id': 12345, 'ActivityDate': '20-08-2022', 'TotalSteps': 13456, 'TotalDistance': 7.869999886, 'TrackerDistance': 7.869999886, 'LoggedActivitiesDistance': 0, 'VeryActiveDistance': 3.319999933, 'ModeratelyActiveDistance': 0.829999983, 'LightActiveDistance': 3.640000105, 'SedentaryActiveDistance': 0, 'VeryActiveMinutes': 47, 'FairlyActiveMinutes': 21, 'LightlyActiveMinutes': 200, 'SedentaryMinutes': 866, 'Calories': 1868}
+2022-08-20 21:02:29,075 - INFO - {'Id': 12345, 'ActivityDate': '20-08-2022', 'TotalSteps': 13456, 'TotalDistance': 7.869999886, 'TrackerDistance': 7.869999886, 'LoggedActivitiesDistance': 0, 'VeryActiveDistance': 3.319999933, 'ModeratelyActiveDistance': 0.829999983, 'LightActiveDistance': 3.640000105, 'SedentaryActiveDistance': 0, 'VeryActiveMinutes': 47, 'FairlyActiveMinutes': 21, 'LightlyActiveMinutes': 200, 'SedentaryMinutes': 866, 'Calories': 1868}
+2022-08-20 21:02:29,075 - INFO - {'Id': 12345, 'ActivityDate': '20-08-2022', 'TotalSteps': 13456, 'TotalDistance': 7.869999886, 'TrackerDistance': 7.869999886, 'LoggedActivitiesDistance': 0, 'VeryActiveDistance': 3.319999933, 'ModeratelyActiveDistance': 0.829999983, 'LightActiveDistance': 3.640000105, 'SedentaryActiveDistance': 0, 'VeryActiveMinutes': 47, 'FairlyActiveMinutes': 21, 'LightlyActiveMinutes': 200, 'SedentaryMinutes': 866, 'Calories': 1868}
+2022-08-20 21:02:29,075 - INFO - Getting SQL DB connection
+2022-08-20 21:02:29,075 - INFO - Getting SQL DB connection
+2022-08-20 21:02:29,075 - INFO - Getting SQL DB connection
+2022-08-20 21:02:29,086 - INFO - Creating DB if not exist
+2022-08-20 21:02:29,086 - INFO - Creating DB if not exist
+2022-08-20 21:02:29,086 - INFO - Creating DB if not exist
+2022-08-20 21:02:29,088 - INFO - SQL DB connection acquired
+2022-08-20 21:02:29,088 - INFO - SQL DB connection acquired
+2022-08-20 21:02:29,088 - INFO - SQL DB connection acquired
+2022-08-20 21:02:29,090 - ERROR - Error encountered while updating data using statement UPDATE fitbit_data SET   TotalSteps = 13456, TotalDistance = 7.869999886, TrackerDistance = 7.869999886, LoggedActivitiesDistance = 0, VeryActiveDistance = 3.319999933, ModeratelyActiveDistance = 0.829999983, LightActiveDistance = 3.640000105, SedentaryActiveDistance = 0, VeryActiveMinutes = 47, FairlyActiveMinutes = 21, LightlyActiveMinutes = 200, SedentaryMinutes = 866, Calories = 1868 WHERE  Id = 12345 AND ActivityDate = 2022-08-20 00:00:00
+2022-08-20 21:02:29,090 - ERROR - Error encountered while updating data using statement UPDATE fitbit_data SET   TotalSteps = 13456, TotalDistance = 7.869999886, TrackerDistance = 7.869999886, LoggedActivitiesDistance = 0, VeryActiveDistance = 3.319999933, ModeratelyActiveDistance = 0.829999983, LightActiveDistance = 3.640000105, SedentaryActiveDistance = 0, VeryActiveMinutes = 47, FairlyActiveMinutes = 21, LightlyActiveMinutes = 200, SedentaryMinutes = 866, Calories = 1868 WHERE  Id = 12345 AND ActivityDate = 2022-08-20 00:00:00
+2022-08-20 21:02:29,090 - ERROR - Error encountered while updating data using statement UPDATE fitbit_data SET   TotalSteps = 13456, TotalDistance = 7.869999886, TrackerDistance = 7.869999886, LoggedActivitiesDistance = 0, VeryActiveDistance = 3.319999933, ModeratelyActiveDistance = 0.829999983, LightActiveDistance = 3.640000105, SedentaryActiveDistance = 0, VeryActiveMinutes = 47, FairlyActiveMinutes = 21, LightlyActiveMinutes = 200, SedentaryMinutes = 866, Calories = 1868 WHERE  Id = 12345 AND ActivityDate = 2022-08-20 00:00:00
+2022-08-20 21:02:29,090 - ERROR - 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00' at line 1
+2022-08-20 21:02:29,090 - ERROR - 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00' at line 1
+2022-08-20 21:02:29,090 - ERROR - 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00:00:00' at line 1
+2022-08-20 21:02:29,092 - INFO - 127.0.0.1 - - [20/Aug/2022 21:02:29] "POST /mysqlupdate HTTP/1.1" 200 -
+2022-08-20 21:02:29,092 - INFO - 127.0.0.1 - - [20/Aug/2022 21:02:29] "POST /mysqlupdate HTTP/1.1" 200 -
+2022-08-20 21:02:29,092 - INFO - 127.0.0.1 - - [20/Aug/2022 21:02:29] "POST /mysqlupdate HTTP/1.1" 200 -
+2022-08-20 21:02:50,863 - INFO - ----------------------------
+2022-08-20 21:02:50,864 - INFO - {'Id': 12345, 'ActivityDate': '20-08-2022', 'TotalSteps': 13456, 'TotalDistance': 7.869999886, 'TrackerDistance': 7.869999886, 'LoggedActivitiesDistance': 0, 'VeryActiveDistance': 3.319999933, 'ModeratelyActiveDistance': 0.829999983, 'LightActiveDistance': 3.640000105, 'SedentaryActiveDistance': 0, 'VeryActiveMinutes': 47, 'FairlyActiveMinutes': 21, 'LightlyActiveMinutes': 200, 'SedentaryMinutes': 866, 'Calories': 1868}
+2022-08-20 21:02:50,864 - INFO - Getting SQL DB connection
+2022-08-20 21:02:50,876 - INFO - Creating DB if not exist
+2022-08-20 21:02:50,877 - INFO - SQL DB connection acquired
+2022-08-20 21:02:50,924 - INFO - 127.0.0.1 - - [20/Aug/2022 21:02:50] "POST /mysqlupdate HTTP/1.1" 200 -
+2022-08-20 21:08:05,021 - INFO - ----------------------------
+2022-08-20 21:08:05,022 - INFO - Getting SQL DB connection
+2022-08-20 21:08:05,038 - INFO - Creating DB if not exist
+2022-08-20 21:08:05,040 - INFO - SQL DB connection acquired
+2022-08-20 21:08:05,041 - ERROR - Key Column not as an input for Delete Operation
+2022-08-20 21:08:05,041 - INFO - 127.0.0.1 - - [20/Aug/2022 21:08:05] "POST /mysqldelete HTTP/1.1" 200 -
+2022-08-20 21:10:22,901 - INFO - ----------------------------
+2022-08-20 21:10:22,902 - INFO - Getting SQL DB connection
+2022-08-20 21:10:22,917 - INFO - Creating DB if not exist
+2022-08-20 21:10:22,918 - INFO - SQL DB connection acquired
+2022-08-20 21:10:22,919 - ERROR - Exception on /mysqldelete [POST]
+Traceback (most recent call last):
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "F:/Data Science/iNeuron/classprojects2/classprojects/APITask_20082022/TaskAPI.py", line 50, in delete_to_mysql
+    if api1.delete_data_mysql(dict(request.json[0])):
+  File "F:\Data Science\iNeuron\classprojects2\classprojects\APITask_20082022\dataops.py", line 243, in delete_data_mysql
+    if len(intID) == 0 and len(Activity_Date) == 0:
+TypeError: object of type 'int' has no len()
+2022-08-20 21:10:22,920 - INFO - 127.0.0.1 - - [20/Aug/2022 21:10:22] "[35m[1mPOST /mysqldelete HTTP/1.1[0m" 500 -
+2022-08-20 21:11:23,320 - INFO - ----------------------------
+2022-08-20 21:11:23,320 - INFO - Getting SQL DB connection
+2022-08-20 21:11:23,366 - INFO - Creating DB if not exist
+2022-08-20 21:11:23,368 - INFO - SQL DB connection acquired
+2022-08-20 21:11:46,376 - INFO - ----------------------------
+2022-08-20 21:11:46,376 - INFO - Getting SQL DB connection
+2022-08-20 21:11:46,389 - INFO - Creating DB if not exist
+2022-08-20 21:11:46,390 - INFO - SQL DB connection acquired
+2022-08-20 21:11:46,393 - INFO - 127.0.0.1 - - [20/Aug/2022 21:11:46] "POST /mysqldelete HTTP/1.1" 200 -
+2022-08-20 21:11:56,799 - INFO - ----------------------------
+2022-08-20 21:11:56,799 - INFO - ----------------------------
+2022-08-20 21:11:56,799 - INFO - Getting SQL DB connection
+2022-08-20 21:11:56,799 - INFO - Getting SQL DB connection
+2022-08-20 21:11:56,805 - INFO - Creating DB if not exist
+2022-08-20 21:11:56,805 - INFO - Creating DB if not exist
+2022-08-20 21:11:56,806 - INFO - SQL DB connection acquired
+2022-08-20 21:11:56,806 - INFO - SQL DB connection acquired
+2022-08-20 21:11:56,810 - INFO - Inserted records to FitBit_data
+2022-08-20 21:11:56,810 - INFO - Inserted records to FitBit_data
+2022-08-20 21:11:56,811 - INFO - 127.0.0.1 - - [20/Aug/2022 21:11:56] "POST /mysqlinsert HTTP/1.1" 200 -
+2022-08-20 21:11:56,811 - INFO - 127.0.0.1 - - [20/Aug/2022 21:11:56] "POST /mysqlinsert HTTP/1.1" 200 -
+2022-08-20 22:09:00,126 - INFO - ----------------------------
+2022-08-20 22:09:00,217 - INFO - Getting Mongo DB connection
+2022-08-20 22:09:12,464 - INFO - Mongo DB connection acquired
+2022-08-20 22:09:47,203 - INFO - ----------------------------
+2022-08-20 22:09:47,203 - INFO - Getting Mongo DB connection
+2022-08-20 22:09:59,397 - INFO - Mongo DB connection acquired
+2022-08-20 22:15:06,101 - INFO - ----------------------------
+2022-08-20 22:15:06,101 - INFO - Getting Mongo DB connection
+2022-08-20 22:15:18,353 - INFO - Mongo DB connection acquired
+2022-08-20 22:15:18,394 - INFO - Updated records to MongoDB
+2022-08-20 22:16:20,924 - INFO - ----------------------------
+2022-08-20 22:16:20,924 - INFO - Getting Mongo DB connection
+2022-08-20 22:16:33,068 - INFO - Mongo DB connection acquired
+2022-08-20 22:16:33,099 - ERROR - Error encountered while inserting data to MongoDB
+2022-08-20 22:16:33,100 - ERROR - filter must be an instance of dict, bson.son.SON, or any other type that inherits from collections.Mapping
+Traceback (most recent call last):
+  File "F:\Data Science\iNeuron\classprojects2\classprojects\APITask_20082022\dataops.py", line 292, in update_into_mongo
+    coll.update_one(key_cols, new_values)
+  File "C:\Users\neera\anaconda3\lib\site-packages\pymongo\collection.py", line 1022, in update_one
+    common.validate_is_mapping("filter", filter)
+  File "C:\Users\neera\anaconda3\lib\site-packages\pymongo\common.py", line 495, in validate_is_mapping
+    raise TypeError("%s must be an instance of dict, bson.son.SON, or "
+TypeError: filter must be an instance of dict, bson.son.SON, or any other type that inherits from collections.Mapping
+2022-08-20 22:16:33,158 - INFO - 127.0.0.1 - - [20/Aug/2022 22:16:33] "POST /mongoupdate HTTP/1.1" 200 -
+2022-08-20 22:17:50,124 - INFO - ----------------------------
+2022-08-20 22:17:50,125 - INFO - Getting Mongo DB connection
+2022-08-20 22:18:02,305 - INFO - Mongo DB connection acquired
+2022-08-20 22:18:02,306 - ERROR - Exception on /mongoupdate [POST]
+Traceback (most recent call last):
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "F:/Data Science/iNeuron/classprojects2/classprojects/APITask_20082022/TaskAPI.py", line 86, in update_to_mongo
+    if api1.update_into_mongo(dict(request.json[0])):
+  File "F:\Data Science\iNeuron\classprojects2\classprojects\APITask_20082022\dataops.py", line 286, in update_into_mongo
+    key_cols = dict(f"{{ Id : {intID} , ActivityDate : {Activity_Date}  }}")
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+2022-08-20 22:18:02,309 - INFO - 127.0.0.1 - - [20/Aug/2022 22:18:02] "[35m[1mPOST /mongoupdate HTTP/1.1[0m" 500 -
+2022-08-20 22:21:41,382 - INFO - ----------------------------
+2022-08-20 22:21:41,382 - INFO - ----------------------------
+2022-08-20 22:21:41,383 - INFO - Getting Mongo DB connection
+2022-08-20 22:21:41,383 - INFO - Getting Mongo DB connection
+2022-08-20 22:21:53,574 - INFO - Mongo DB connection acquired
+2022-08-20 22:21:53,574 - INFO - Mongo DB connection acquired
+2022-08-20 22:21:53,575 - ERROR - Exception on /mongoupdate [POST]
+Traceback (most recent call last):
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "F:/Data Science/iNeuron/classprojects2/classprojects/APITask_20082022/TaskAPI.py", line 86, in update_to_mongo
+    if api1.update_into_mongo(dict(request.json[0])):
+  File "F:\Data Science\iNeuron\classprojects2\classprojects\APITask_20082022\dataops.py", line 286, in update_into_mongo
+    key_cols = dict(f"{{ Id : {intID} , ActivityDate : {Activity_Date}  }}")
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+2022-08-20 22:21:53,575 - ERROR - Exception on /mongoupdate [POST]
+Traceback (most recent call last):
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "F:/Data Science/iNeuron/classprojects2/classprojects/APITask_20082022/TaskAPI.py", line 86, in update_to_mongo
+    if api1.update_into_mongo(dict(request.json[0])):
+  File "F:\Data Science\iNeuron\classprojects2\classprojects\APITask_20082022\dataops.py", line 286, in update_into_mongo
+    key_cols = dict(f"{{ Id : {intID} , ActivityDate : {Activity_Date}  }}")
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+2022-08-20 22:21:53,577 - INFO - 127.0.0.1 - - [20/Aug/2022 22:21:53] "[35m[1mPOST /mongoupdate HTTP/1.1[0m" 500 -
+2022-08-20 22:21:53,577 - INFO - 127.0.0.1 - - [20/Aug/2022 22:21:53] "[35m[1mPOST /mongoupdate HTTP/1.1[0m" 500 -
+2022-08-20 22:25:56,853 - INFO - ----------------------------
+2022-08-20 22:25:56,853 - INFO - Getting Mongo DB connection
+2022-08-20 22:26:09,024 - INFO - Mongo DB connection acquired
+2022-08-20 22:26:09,025 - ERROR - Exception on /mongoupdate [POST]
+Traceback (most recent call last):
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\neera\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "F:/Data Science/iNeuron/classprojects2/classprojects/APITask_20082022/TaskAPI.py", line 86, in update_to_mongo
+    if api1.update_into_mongo(dict(request.json[0])):
+  File "F:\Data Science\iNeuron\classprojects2\classprojects\APITask_20082022\dataops.py", line 287, in update_into_mongo
+    key_cols = dict(f"{{ Id : {intID}  }}")
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+2022-08-20 22:26:09,027 - INFO - 127.0.0.1 - - [20/Aug/2022 22:26:09] "[35m[1mPOST /mongoupdate HTTP/1.1[0m" 500 -
+2022-08-20 22:33:28,988 - INFO - ----------------------------
+2022-08-20 22:33:28,989 - INFO - Getting Mongo DB connection
+2022-08-20 22:33:41,178 - INFO - Mongo DB connection acquired
+2022-08-20 22:33:41,183 - INFO - Updated records to MongoDB
+2022-08-20 22:37:39,530 - INFO - ----------------------------
+2022-08-20 22:37:39,530 - INFO - Getting Mongo DB connection
+2022-08-20 22:37:51,698 - INFO - Mongo DB connection acquired
+2022-08-20 22:37:51,717 - INFO - Updated records to MongoDB
+2022-08-20 22:37:51,718 - INFO - 127.0.0.1 - - [20/Aug/2022 22:37:51] "POST /mongoupdate HTTP/1.1" 200 -
+2022-08-20 22:38:13,174 - INFO - ----------------------------
+2022-08-20 22:38:13,174 - INFO - Getting Mongo DB connection
+2022-08-20 22:38:25,296 - INFO - Mongo DB connection acquired
+2022-08-20 22:38:25,312 - ERROR - Error encountered while inserting data to MongoDB
+2022-08-20 22:38:25,312 - ERROR - filter must be an instance of dict, bson.son.SON, or any other type that inherits from collections.Mapping
+Traceback (most recent call last):
+  File "F:\Data Science\iNeuron\classprojects2\classprojects\APITask_20082022\dataops.py", line 293, in update_into_mongo
+    coll.update_many(key_cols, new_values)
+  File "C:\Users\neera\anaconda3\lib\site-packages\pymongo\collection.py", line 1098, in update_many
+    common.validate_is_mapping("filter", filter)
+  File "C:\Users\neera\anaconda3\lib\site-packages\pymongo\common.py", line 495, in validate_is_mapping
+    raise TypeError("%s must be an instance of dict, bson.son.SON, or "
+TypeError: filter must be an instance of dict, bson.son.SON, or any other type that inherits from collections.Mapping
+2022-08-20 22:38:25,321 - INFO - 127.0.0.1 - - [20/Aug/2022 22:38:25] "POST /mongoupdate HTTP/1.1" 200 -
+2022-08-20 22:38:51,735 - INFO - ----------------------------
+2022-08-20 22:38:51,735 - INFO - Getting Mongo DB connection
+2022-08-20 22:39:03,939 - INFO - Mongo DB connection acquired
+2022-08-20 22:39:03,942 - ERROR - Error encountered while inserting data to MongoDB
+2022-08-20 22:39:03,943 - ERROR - filter must be an instance of dict, bson.son.SON, or any other type that inherits from collections.Mapping
+Traceback (most recent call last):
+  File "F:\Data Science\iNeuron\classprojects2\classprojects\APITask_20082022\dataops.py", line 293, in update_into_mongo
+    coll.update_many(key_cols, new_values)
+  File "C:\Users\neera\anaconda3\lib\site-packages\pymongo\collection.py", line 1098, in update_many
+    common.validate_is_mapping("filter", filter)
+  File "C:\Users\neera\anaconda3\lib\site-packages\pymongo\common.py", line 495, in validate_is_mapping
+    raise TypeError("%s must be an instance of dict, bson.son.SON, or "
+TypeError: filter must be an instance of dict, bson.son.SON, or any other type that inherits from collections.Mapping
+2022-08-20 22:50:15,267 - INFO - ----------------------------
+2022-08-20 22:50:15,267 - INFO - Getting Mongo DB connection
+2022-08-20 22:50:27,467 - INFO - Mongo DB connection acquired
+2022-08-20 22:50:27,471 - ERROR - Error encountered while updating data to MongoDB
+2022-08-20 22:50:27,471 - ERROR - unhashable type: 'dict'
+Traceback (most recent call last):
+  File "F:\Data Science\iNeuron\classprojects2\classprojects\APITask_20082022\dataops.py", line 294, in update_into_mongo
+    coll.update_many({
+TypeError: unhashable type: 'dict'
+2022-08-20 22:52:46,134 - INFO - ----------------------------
+2022-08-20 22:52:46,134 - INFO - Getting Mongo DB connection
+2022-08-20 22:52:58,315 - INFO - Mongo DB connection acquired
+2022-08-20 22:52:58,315 - INFO -  TotalSteps : 12262 , TotalDistance : 7.869999886 , TrackerDistance : 7.869999886 , LoggedActivitiesDistance : 0 , VeryActiveDistance : 3.319999933 , ModeratelyActiveDistance : 0.829999983 , LightActiveDistance : 3.640000105 , SedentaryActiveDistance : 0 , VeryActiveMinutes : 47 , FairlyActiveMinutes : 21 , LightlyActiveMinutes : 200 , SedentaryMinutes : 866 , Calories : 1868 
+2022-08-20 22:52:58,316 - ERROR - Error encountered while updating data to MongoDB
+2022-08-20 22:52:58,316 - ERROR - unhashable type: 'dict'
+Traceback (most recent call last):
+  File "F:\Data Science\iNeuron\classprojects2\classprojects\APITask_20082022\dataops.py", line 290, in update_into_mongo
+    coll.update_many({
+TypeError: unhashable type: 'dict'
+2022-08-20 22:54:25,790 - INFO - ----------------------------
+2022-08-20 22:54:25,791 - INFO - Getting Mongo DB connection
+2022-08-20 22:54:37,934 - INFO - Mongo DB connection acquired
+2022-08-20 22:54:37,935 - INFO -  TotalSteps : 12262 , TotalDistance : 7.869999886 , TrackerDistance : 7.869999886 , LoggedActivitiesDistance : 0 , VeryActiveDistance : 3.319999933 , ModeratelyActiveDistance : 0.829999983 , LightActiveDistance : 3.640000105 , SedentaryActiveDistance : 0 , VeryActiveMinutes : 47 , FairlyActiveMinutes : 21 , LightlyActiveMinutes : 200 , SedentaryMinutes : 866 , Calories : 1868 
+2022-08-20 22:54:37,935 - ERROR - Error encountered while updating data to MongoDB
+2022-08-20 22:54:37,935 - ERROR - unhashable type: 'dict'
+Traceback (most recent call last):
+  File "F:\Data Science\iNeuron\classprojects2\classprojects\APITask_20082022\dataops.py", line 290, in update_into_mongo
+    coll.update_many({
+TypeError: unhashable type: 'dict'
+2022-08-20 22:58:03,877 - INFO - ----------------------------
+2022-08-20 22:58:03,877 - INFO - Getting Mongo DB connection
+2022-08-20 22:58:16,054 - INFO - Mongo DB connection acquired
+2022-08-20 22:58:16,054 - INFO -  TotalSteps : 12262 , TotalDistance : 7.869999886 , TrackerDistance : 7.869999886 , LoggedActivitiesDistance : 0 , VeryActiveDistance : 3.319999933 , ModeratelyActiveDistance : 0.829999983 , LightActiveDistance : 3.640000105 , SedentaryActiveDistance : 0 , VeryActiveMinutes : 47 , FairlyActiveMinutes : 21 , LightlyActiveMinutes : 200 , SedentaryMinutes : 866 , Calories : 1868 
+2022-08-20 22:58:16,387 - ERROR - Error encountered while updating data to MongoDB
+2022-08-20 22:58:16,388 - ERROR - cannot encode object: {' TotalSteps : 12262 , TotalDistance : 7.869999886 , TrackerDistance : 7.869999886 , LoggedActivitiesDistance : 0 , VeryActiveDistance : 3.319999933 , ModeratelyActiveDistance : 0.829999983 , LightActiveDistance : 3.640000105 , SedentaryActiveDistance : 0 , VeryActiveMinutes : 47 , FairlyActiveMinutes : 21 , LightlyActiveMinutes : 200 , SedentaryMinutes : 866 , Calories : 1868 '}, of type: <class 'set'>
+Traceback (most recent call last):
+  File "F:\Data Science\iNeuron\classprojects2\classprojects\APITask_20082022\dataops.py", line 290, in update_into_mongo
+    coll.update_many(
+  File "C:\Users\neera\anaconda3\lib\site-packages\pymongo\collection.py", line 1104, in update_many
+    self._update_retryable(
+  File "C:\Users\neera\anaconda3\lib\site-packages\pymongo\collection.py", line 877, in _update_retryable
+    return self.__database.client._retryable_write(
+  File "C:\Users\neera\anaconda3\lib\site-packages\pymongo\mongo_client.py", line 1552, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "C:\Users\neera\anaconda3\lib\site-packages\pymongo\mongo_client.py", line 1438, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "C:\Users\neera\anaconda3\lib\site-packages\pymongo\mongo_client.py", line 1470, in _retry_internal
+    return func(session, sock_info, retryable)
+  File "C:\Users\neera\anaconda3\lib\site-packages\pymongo\collection.py", line 869, in _update
+    return self._update(
+  File "C:\Users\neera\anaconda3\lib\site-packages\pymongo\collection.py", line 838, in _update
+    result = sock_info.command(
+  File "C:\Users\neera\anaconda3\lib\site-packages\pymongo\pool.py", line 726, in command
+    self._raise_connection_failure(error)
+  File "C:\Users\neera\anaconda3\lib\site-packages\pymongo\pool.py", line 710, in command
+    return command(self, dbname, spec, secondary_ok,
+  File "C:\Users\neera\anaconda3\lib\site-packages\pymongo\network.py", line 118, in command
+    request_id, msg, size, max_doc_size = message._op_msg(
+  File "C:\Users\neera\anaconda3\lib\site-packages\pymongo\message.py", line 742, in _op_msg
+    return _op_msg_uncompressed(
+bson.errors.InvalidDocument: cannot encode object: {' TotalSteps : 12262 , TotalDistance : 7.869999886 , TrackerDistance : 7.869999886 , LoggedActivitiesDistance : 0 , VeryActiveDistance : 3.319999933 , ModeratelyActiveDistance : 0.829999983 , LightActiveDistance : 3.640000105 , SedentaryActiveDistance : 0 , VeryActiveMinutes : 47 , FairlyActiveMinutes : 21 , LightlyActiveMinutes : 200 , SedentaryMinutes : 866 , Calories : 1868 '}, of type: <class 'set'>
+2022-08-20 23:06:27,890 - INFO - ----------------------------
+2022-08-20 23:06:27,891 - INFO - Getting Mongo DB connection
+2022-08-20 23:06:40,179 - INFO - Mongo DB connection acquired
+2022-08-20 23:06:40,549 - INFO - Deleted records to MongoDB
+2022-08-20 23:07:48,862 - INFO - ----------------------------
+2022-08-20 23:07:48,862 - INFO - ----------------------------
+2022-08-20 23:07:48,867 - INFO - Getting Mongo DB connection
+2022-08-20 23:07:48,867 - INFO - Getting Mongo DB connection
+2022-08-20 23:08:01,154 - INFO - Mongo DB connection acquired
+2022-08-20 23:08:01,154 - INFO - Mongo DB connection acquired
+2022-08-20 23:08:01,450 - INFO - Inserted records to MongoDB
+2022-08-20 23:08:01,450 - INFO - Inserted records to MongoDB
+2022-08-20 23:08:01,470 - INFO - 127.0.0.1 - - [20/Aug/2022 23:08:01] "POST /mongodelete HTTP/1.1" 200 -
+2022-08-20 23:08:01,470 - INFO - 127.0.0.1 - - [20/Aug/2022 23:08:01] "POST /mongodelete HTTP/1.1" 200 -
